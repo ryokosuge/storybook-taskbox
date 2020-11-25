@@ -1,0 +1,9 @@
+{
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "javascript.suggest.enabled": false,
+    "javascript.suggestionActions.enabled": false,
+    "typescript.suggest.enabled": false,
+    "typescript.suggest.includeAutomaticOptionalChainCompletions": false,
+    "typescript.suggestionActions.enabled": false,
+    "typescript.surveys.enabled": false
+}
