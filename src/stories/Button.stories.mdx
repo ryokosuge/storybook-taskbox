@@ -1,0 +1,42 @@
+import { Meta, Story, ArgsTable, Canvas } from "@storybook/addon-docs/blocks";
+import * as stories from "./Button.stories.tsx";
+import { Button, ButtonProps } from "./Button";
+
+<Meta
+    title="Components/Button"
+    comonent={Button}
+    argTypes={{ onClick: { action: 'clicked' } }} />
+
+# Button
+
+<Story story={stories.Primary} />
+
+<ArgsTable of={Button} />
+
+export const Template = (args) => <Button {...args} />;
+
+<Canvas>
+    <Story name="primary" args={{
+        primary: true,
+        label: "Primery Button"
+    }}>
+        {Template.bind({})}
+    </Story>
+    <Story name="secondary" args={{
+        label: "secondary Button"
+    }}>
+        {Template.bind({})}
+    </Story>
+    <Story name="large" args={{
+        size: "large",
+        label: "Large Button"
+    }}>
+        {Template.bind({})}
+    </Story>
+    <Story name="small" args={{
+        size: "small",
+        label: "Small Button"
+    }}>
+        {Template.bind({})}
+    </Story>
+</Canvas>
